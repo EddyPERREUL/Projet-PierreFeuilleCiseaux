@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>pierre feuille ciseaux</title>
+  </head>
+  <body>
+    <section class="game">
+      <div class="score">
+        <div class="player-score">
+          <h2>Joueur</h2>
+          <p>0</p>
+        </div>
+        <div class="computer-score">
+          <h2>Ordi</h2>
+          <p>0</p>
+        </div>
+      </div>
+
+      <div class="intro">
+        <h1>pierre feuille ciseaux</h1>
+        <button>Lancer le jeu</button>
+      </div>
+
+      <div class="match fadeOut">
+        <h2 class="winner">Choisir une option</h2>
+        <div class="hands">
+          <img class="player-hand" src="./assets/pierre.png" alt="pierre" />
+          <img class="computer-hand" src="./assets/pierre.png" alt="pierre" />
+        </div>
+        <div class="options">
+          <button class="rock">pierre</button>
+          <button class="paper">feuille</button>
+          <button class="scissors">ciseaux</button>
+        </div>
+      </div>
+    </section>
+
+    <audio id="upsound" src="assets/14 - 1-Up.mp3"></audio>
+    <audio id="downsound" src="assets/15 - 1-Down.mp3"></audio>
+
+
+    <script src="app.js"></script>
+  </body>
+</html>
