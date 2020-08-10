@@ -5,7 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./style.css" />
+    <link
+    href="//db.onlinewebfonts.com/c/29f4c6fe36801450398679968448cf3d?family=Super+Mario+Bros."
+    rel="stylesheet"
+    type="text/css"
+  />
     <title>pierre feuille ciseaux</title>
+    <script>
+      var go = new Audio();
+      go.src = "/assets/here-we-go-mario-sound-effect.mp3";
+    </script>
   </head>
   <body>
     <section class="game">
@@ -22,9 +31,8 @@
 
       <div class="intro">
         <h1>pierre feuille ciseaux</h1>
-        <button>Lancer le jeu</button>
+        <button onmousedown="go.play()">Jouer !</button>
       </div>
-
       <div class="match fadeOut">
         <h2 class="winner">Choisir une option</h2>
         <div class="hands">
@@ -37,12 +45,10 @@
           <button class="scissors">ciseaux</button>
         </div>
       </div>
-    </section>
-
+    </section>   
     <audio id="upsound" src="assets/14 - 1-Up.mp3"></audio>
-    <audio id="downsound" src="assets/15 - 1-Down.mp3"></audio>
-
-
+    <audio id="downsound" src="assets/15 - 1-Down.mp3"></audio> 
+    <audio id="letsgo" src="/assets/here-we-go-mario-sound-effect.mp3"></audio>
     <script src="app.js"></script>
   </body>
 </html>
